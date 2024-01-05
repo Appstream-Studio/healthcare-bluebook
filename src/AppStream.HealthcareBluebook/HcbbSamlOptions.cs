@@ -8,6 +8,12 @@ public class HcbbSamlOptions
     public const string OptionsName = "HcbbSaml";
 
     /// <summary>
+    /// SAML assertion audience.
+    /// </summary>
+    [Required]
+    public required string Audience { get; set; } = "healthcarebluebook:SAML20:TEST";
+
+    /// <summary>
     /// ClientId SAML assertion attribute name.
     /// </summary>
     [Required]
@@ -20,32 +26,26 @@ public class HcbbSamlOptions
     public required string ClientIdAttributeValue { get; set; }
 
     /// <summary>
-    /// MemberId SAML assertion attribute name.
-    /// </summary>
-    [Required]
-    public required string MemberIdAttributeName { get; set; } = "memberid";
-
-    /// <summary>
-    /// SAML assertion audience.
-    /// </summary>
-    [Required]
-    public required string Audience { get; set; } = "healthcarebluebook:SAML20:TEST";
-
-    /// <summary>
     /// SAML issuer.
     /// </summary>
     [Required]
     public required string Issuer { get; set; }
 
     /// <summary>
-    /// SSO destination.
+    /// MemberId SAML assertion attribute name.
     /// </summary>
     [Required]
-    public required string SingleSignOnDestination { get; set; } = "https://test.healthcarebluebook.com/sso/test/BPA/default.aspx";
+    public required string MemberIdAttributeName { get; set; } = "memberid";
 
     /// <summary>
     /// Signature algorithm.
     /// </summary>
     [Required]
     public required string SignatureAlgorithm { get; set; } = Saml2SecurityAlgorithms.RsaSha256Signature;
+
+    /// <summary>
+    /// SSO destination.
+    /// </summary>
+    [Required]
+    public required string SingleSignOnDestination { get; set; } = "https://test.healthcarebluebook.com/sso/test/BPA/default.aspx";
 }

@@ -92,6 +92,7 @@ dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
 dotnet_style_prefer_compound_assignment = true:suggestion
 # Code quality rules
 dotnet_code_quality_unused_parameters = all:suggestion
+dotnet_style_prefer_collection_expression = true:suggestion
 
 [*.cs]
 

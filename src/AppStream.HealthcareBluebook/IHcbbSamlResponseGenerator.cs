@@ -4,6 +4,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens.Saml2;
 using ITfoxtec.Identity.Saml2.MvcCore;
+using Microsoft.Extensions.Options;
 
 namespace AppStream.HealthcareBluebook;
 
@@ -18,10 +19,10 @@ internal class HcbbSamlResponseGenerator : IHcbbSamlResponseGenerator
     private readonly ISamlConfigurationProvider _configurationProvider;
 
     public HcbbSamlResponseGenerator(
-        HcbbSamlOptions samlOptions,
+        IOptions<HcbbSamlOptions> samlOptions,
         ISamlConfigurationProvider configurationProvider)
     {
-        this._samlOptions = samlOptions;
+        this._samlOptions = samlOptions.Value;
         this._configurationProvider = configurationProvider;
     }
 
