@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppStream.HealthcareBluebook", "src\AppStream.HealthcareBluebook\AppStream.HealthcareBluebook.csproj", "{5AE2FD4A-6F8F-4774-A852-F3ED4E1186E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9054FCEA-188B-4F70-812D-4BDB51AAF59A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD61B8FB-11D9-4ECB-913A-B205B0EAEF62}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AE2FD4A-6F8F-4774-A852-F3ED4E1186E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE2FD4A-6F8F-4774-A852-F3ED4E1186E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE2FD4A-6F8F-4774-A852-F3ED4E1186E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE2FD4A-6F8F-4774-A852-F3ED4E1186E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5AE2FD4A-6F8F-4774-A852-F3ED4E1186E5} = {9054FCEA-188B-4F70-812D-4BDB51AAF59A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD26F842-B34D-4EDE-A3C5-21DA8DE39911}
+	EndGlobalSection
+EndGlobal
