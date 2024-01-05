@@ -1,8 +1,8 @@
-﻿using ITfoxtec.Identity.Saml2.Cryptography;
+﻿using System.Security.Cryptography.X509Certificates;
 
 namespace AppStream.HealthcareBluebook.Certificate;
 
 internal interface ISigningCertificateProvider
 {
-    Saml2X509Certificate GetSigingCertificate();
+    X509Certificate2 GetSigingCertificate();
 }
