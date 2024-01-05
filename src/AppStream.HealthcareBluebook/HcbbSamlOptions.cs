@@ -47,5 +47,5 @@ public class HcbbSamlOptions
     /// SSO destination.
     /// </summary>
     [Required]
-    public required string SingleSignOnDestination { get; set; } = "https://test.healthcarebluebook.com/sso/test/BPA/default.aspx";
+    public required string SingleSignOnDestination { get; set; }
 }
