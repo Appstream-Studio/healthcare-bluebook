@@ -11,7 +11,7 @@ public class HcbbSamlOptions
     /// SAML assertion audience.
     /// </summary>
     [Required]
-    public required string Audience { get; set; } = "healthcarebluebook:SAML20:TEST";
+    public required string Audience { get; set; }
 
     /// <summary>
     /// ClientId SAML assertion attribute name.
