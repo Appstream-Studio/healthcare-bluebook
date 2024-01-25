@@ -396,3 +396,17 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Transformed css files
+*.css.map
+*.rtl.css
+*.rtl.css.map
+*.rtl.min.css
+
+# Transformed js files
+*.bundle.js
+*.bundle.min.js
+*.esm.js
+*.esm.min.js
+*.js.map
+*.min.map
