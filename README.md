@@ -1,3 +1,7 @@
+[![AppStream Studio](https://raw.githubusercontent.com/Appstream-Studio/healthcare-bluebook/main/assets/banner.jpg)](https://appstream.studio/)
+[![License](https://img.shields.io/badge/license-apache-green)](https://github.com/Appstream-Studio/healthcare-bluebook/blob/main/LICENSE)
+[![NuGet Package](https://img.shields.io/nuget/v/appstream.healthcarebluebook.svg)](https://www.nuget.org/packages/AppStream.HealthcareBluebook/)
+
 # AppStream.HealthcareBluebook Library
 
 `AppStream.HealthcareBluebook` is an open-source .NET Core library designed to simplify the integration process with Healthcare Bluebook's Single Sign-On (SSO) system using SAML 2.0. The library provides an easy-to-use interface to seamlessly integrate your web application with Healthcare Bluebook's SSO.
