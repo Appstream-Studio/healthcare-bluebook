@@ -10,11 +10,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD61B8FB-11D9-4ECB-913A-B205B0EAEF62}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{3F1CA532-AD9B-456E-858E-D4336D4AEAA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStream.HealthcareBluebook.Sample", "sample\AppStream.HealthcareBluebook.Sample\AppStream.HealthcareBluebook.Sample.csproj", "{DDD57290-3E84-4CA3-8AA6-C041544B69FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppStream.HealthcareBluebook.Sample", "sample\AppStream.HealthcareBluebook.Sample\AppStream.HealthcareBluebook.Sample.csproj", "{DDD57290-3E84-4CA3-8AA6-C041544B69FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

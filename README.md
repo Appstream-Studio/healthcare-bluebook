@@ -23,7 +23,6 @@ dotnet add package AppStream.HealthcareBluebook
 In your web app's startup code, add the following lines based on your certificate storage preference:
 
 If your signing certificate is on your machine:
-
 ```csharp
 builder.Services
     .AddHealthcareBluebook()
@@ -37,6 +36,13 @@ builder.Services
     .WithAzureKeyVaultCertificateProvider();
 ```
 
+You can also create and use your own implementation of `ISigningCertificateProvider`:
+```csharp
+builder.Services
+    .AddHealthcareBluebook()
+    .WithCertificateProvider<YourSigningCertificateProvider>();
+```
+
 ### 3. App Settings
 
 Configure your app settings in your `appsettings.json` or equivalent configuration file:
@@ -44,19 +50,19 @@ Configure your app settings in your `appsettings.json` or equivalent configurati
 ```json
 {
   "HcbbSaml": {
-    "Audience": "healthcarebluebook:SAML20:TEST",
+    "Audience": ">> HCBB audience <<",
     "ClientIdAttributeName": "clientid",
     "ClientIdAttributeValue": ">> your client id <<",
     "Issuer": ">> your saml 'issuer' value <<",
     "MemberIdAttributeName": "memberid",
     "SignatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
-    "SingleSignOnDestination": "https://test.healthcarebluebook.com/sso/test/BPA/default.aspx"
+    "SingleSignOnDestination": "url to HCBB SSO"
   },
-  "AzureKeyVault": {
+  "AzureKeyVault": { // needed only when using AzureKeyVaultSigningCertificateProvider
     "CertificateName": ">> name of the cert in the key vault <<",
     "KeyVaultUrl": ">> url to your key vault <<"
   },
-  "CertFile": {
+  "CertFile": { // needed only when using CertFileSigningCertificateProvider
     "FileName": "cert file name",
     "Password": "cert passwrd"
   }
