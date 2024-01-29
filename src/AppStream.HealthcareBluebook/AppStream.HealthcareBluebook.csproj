@@ -4,6 +4,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>AppStream.HealthcareBluebook</AssemblyName>
+    <RootNamespace>AppStream.HealthcareBluebook</RootNamespace>
+    <MajorVersion>1</MajorVersion>
+    <MinorVersion>0</MinorVersion>
+    <PatchVersion>0</PatchVersion>
+    <Version>$(MajorVersion).$(MinorVersion).$(PatchVersion)</Version>
+    <FileVersion>$(MajorVersion).$(MinorVersion).$(PatchVersion)</FileVersion>
+  </PropertyGroup>
+
+  <!-- NuGet Publishing Metadata -->
+  <PropertyGroup>
+    <Title>Healthcare Bluebook</Title>
+    <Authors>Appstream Studio</Authors>
+    <Description>Healthcare Bluebook is an open-source .NET Core library designed to simplify the integration process with Healthcare Bluebook's Single Sign-On (SSO) system using SAML 2.0.</Description>
+    <PackageTags>HealthcareBluebook SSO SAML2.0</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Appstream-Studio/healthcare-bluebook</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Appstream-Studio/healthcare-bluebook.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
