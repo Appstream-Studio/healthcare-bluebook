@@ -35,4 +35,15 @@
     <PackageReference Include="RSAKeyVaultProvider" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\assets\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
 </Project>
