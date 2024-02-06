@@ -40,6 +40,13 @@ builder.Services
     .WithAzureKeyVaultCertificateProvider();
 ```
 
+If you signing certificate is in Windows certificate store:
+```csharp
+builder.Services
+    .AddHealthcareBluebook()
+    .WithWindowsStoreCertificateProvider();
+```
+
 You can also create and use your own implementation of `ISigningCertificateProvider`:
 ```csharp
 builder.Services
@@ -69,6 +76,12 @@ Configure your app settings in your `appsettings.json` or equivalent configurati
   "CertFile": { // needed only when using CertFileSigningCertificateProvider
     "FileName": "cert file name",
     "Password": "cert passwrd"
+  },
+  "WindowsCertificateStore": { // needed only when using WindowsStoreSigningCertificateProvider
+    "StoreName": "Me",
+    "StoreLocation": "LocalMachine",
+    "FindType": "FindByThumbprint",
+    "FindValue": "cert thumbprint"
   }
 }
 ```
